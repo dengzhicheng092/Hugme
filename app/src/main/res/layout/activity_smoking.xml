@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".All_Activities.Smoking_A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/smoking_TB_id"
+        android:layout_marginStart="-15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/smoking_back_id"
+                app:srcCompat="@drawable/ic_back_gray"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/smoking_back_id"
+                android:text="@string/smoking"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/smoking_view_id"
+        android:layout_below="@+id/smoking_TB_id"
+        android:background="@drawable/t_to_b_shadow"
+        />
+
+    <ListView
+        android:id="@+id/simple_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smoking_view_id"
+        >
+    </ListView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/smoking_RL_id"
+        android:visibility="gone"
+        android:background="@drawable/d_border_bottom"
+        android:layout_below="@+id/smoking_view_id"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/smoking_tv_id"
+            android:text="No answer"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_down_arrow"
+            android:padding="6dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

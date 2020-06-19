@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_title_id"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hey_user_when_s_your_birthday"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+            android:layout_margin="10dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob_RL_id"
+            android:layout_below="@+id/dob_title_id"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/day_RL_id">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/day_TV_id"
+                    android:text="@string/day"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/day_ET1_id"
+                    android:layout_below="@+id/day_TV_id"
+                    android:hint="@string/d"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="-3dp"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+                <EditText
+                    android:id="@+id/day_ET2_id"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day_TV_id"
+                    android:layout_toRightOf="@+id/day_ET1_id"
+                    android:cursorVisible="true"
+                    android:hint="@string/d"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/month_RL_id"
+                android:layout_toRightOf="@+id/day_RL_id"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/month_TV_id"
+                    android:text="@string/month"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/month_ET1_id"
+                    android:layout_below="@+id/month_TV_id"
+                    android:hint="@string/m"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="-3dp"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/month_ET2_id"
+                    android:layout_below="@+id/month_TV_id"
+                    android:layout_toRightOf="@+id/month_ET1_id"
+                    android:hint="@string/m"
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/month_RL_id">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/year_TV_id"
+                    android:text="@string/year"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/year_ET1_id"
+                    android:layout_below="@+id/year_TV_id"
+                    android:hint="@string/y"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/year_ET2_id"
+                    android:layout_below="@+id/year_TV_id"
+                    android:layout_toRightOf="@+id/year_ET1_id"
+                    android:hint="@string/y"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/year_ET3_id"
+                    android:layout_below="@+id/year_TV_id"
+                    android:layout_toRightOf="@+id/year_ET2_id"
+                    android:hint="@string/y"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+                <EditText
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/year_ET4_id"
+                    android:layout_below="@+id/year_TV_id"
+                    android:layout_toRightOf="@+id/year_ET3_id"
+                    android:hint="@string/y"
+                    android:gravity="center"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:maxLength="1"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dob_RL_id"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="@string/you_must_be_at_least_18_to_use_hugme"
+            android:textSize="12dp"
+            android:textColor="@color/gray"
+            />
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:corner_radius="8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/purple"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/dob_btn_id"
+                android:background="@android:color/transparent"
+                android:text="@string/continue_txt"
+                android:textColor="@color/white"
+                />
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

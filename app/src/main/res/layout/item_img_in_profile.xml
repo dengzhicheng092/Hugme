@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/IV_id"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_heart"
+        android:layout_margin="3dp"
+        android:scaleType="fitCenter"
+        app:placeholderImageScaleType="centerCrop"
+        app:placeholderImage="@drawable/image_placeholder"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/dialog_TB_id"
+                android:layout_marginStart="-15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:id="@+id/dialog_cross_Id"
+                        app:srcCompat="@drawable/ic_cross"
+                        android:padding="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Filter"
+                        android:id="@+id/filter_text"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textFontWeight="900"
+                        />
+
+                    <ImageView
+                        android:id="@+id/dialog_tick_id"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="0dp"
+                        android:padding="10dp"
+                        app:srcCompat="@drawable/ic_tick_gray"
+                        />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_TB_id"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/near_by_RL_id"
+                    android:background="@drawable/d_gray_border"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="People nearby"
+                        android:id="@+id/search_place"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        app:srcCompat="@drawable/ic_navigation"
+                        android:padding="4dp"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Distance"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/distance"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/gray"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+                <SeekBar
+                    android:id="@+id/simpleSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="10000"
+                    android:progressDrawable="@drawable/d_middle_gray_line"
+                    android:thumb="@drawable/thumb_image"
+                    android:progress="10000"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show me"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:textSize="16dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/guys_id"
+                        android:text="Male"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/d_gray_border"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/girls_id"
+                        android:text="Female"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/d_gray_border"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/both_id"
+                        android:text="Both"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/d_round_blue_border_radius8"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Filter by"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/all_id"
+                        android:text="All"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/d_round_blue_border_radius8"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/online_id"
+                        android:text="Online"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/d_gray_border"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/new_id"
+                        android:text="New"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:background="@drawable/d_gray_border"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/dialog_TV1_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="Age"
+                        android:textSize="16dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <com.appyvet.materialrangebar.RangeBar
+                        android:layout_width="match_parent"
+                        android:layout_height="39dp"
+                        android:id="@+id/ww_RB_id"
+                        android:layout_below="@+id/dialog_TV1_id"
+                        app:mrb_rangeBar="true"
+                        app:mrb_selectorSize="10dp"
+                        app:mrb_selectorColor="@color/purple"
+                        app:mrb_selectorBoundaryColor="@color/white"
+                        app:mrb_connectingLineColor="@color/purple"
+                        app:mrb_tickColor="@android:color/transparent"
+                        app:mrb_pinTextColor="@android:color/transparent"
+                        app:mrb_pinColor="@color/white"
+
+                        app:mrb_rangeBarColor="@color/dark_gray"
+                        app:mrb_tickStart="18"
+                        app:mrb_tickEnd="64"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:hint="18 - 35"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/text_age"
+                        android:textSize="16dp"
+                        android:textColor="@color/gray"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

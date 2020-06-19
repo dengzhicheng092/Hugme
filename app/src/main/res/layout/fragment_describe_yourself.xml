@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fl_id"
+    android:background="@color/white"
+    android:focusable="true"
+    tools:context=".All_Fragments.Describe_yourself_F">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:cursorVisible="false"
+                android:hint="@string/describe_yourself_to_someone_who_doesn_t_know_you"
+                android:maxLength="250"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_counter_id"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+                android:text="0/250"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="48dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

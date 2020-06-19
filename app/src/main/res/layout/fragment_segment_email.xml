@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_title_id"
+            android:layout_centerHorizontal="true"
+            android:text="@string/what_s_your_email"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_TV_id"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/email_title_id"
+            android:text="@string/sign_up_with_phone_number_instead"
+            android:textColor="@color/black"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:paddingBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_TV_id"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/email_title_id"
+            android:text="@string/sign_up_with_email_instead"
+            android:textColor="@color/black"
+            android:paddingTop="5dp"
+            android:paddingBottom="15dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/email_TV_id"
+            android:layout_marginTop="60dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_ET_id"
+                android:hint="@string/email"
+                android:layout_gravity="center_vertical"
+                android:inputType="textEmailAddress"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_ET_id"
+                android:hint="@string/password"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:inputType="textPassword"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/phone_LL_id"
+            android:orientation="horizontal"
+            android:layout_below="@+id/phone_TV_id"
+            android:layout_marginTop="60dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/inner_LL1_id"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="2dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phone_number_id"
+                    android:text="+92"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    app:srcCompat="@drawable/ic_down_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/inner_LL1_id"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="bottom"
+                android:paddingBottom="2dp">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Number_verify_ET_id"
+                    android:inputType="number"
+                    android:hint="@string/mobile_number"
+                    android:textSize="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:corner_radius="8dp"
+            android:background="@color/purple"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/email_btn_id"
+                android:background="@android:color/transparent"
+                android:text="@string/continue_txt"
+                android:textColor="@color/white"
+                />
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

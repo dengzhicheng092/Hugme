@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".All_Activities.Drinking_A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/drinking_TB_id"
+        android:layout_marginStart="-15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/drinking_back_id"
+                app:srcCompat="@drawable/ic_back_gray"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/drinking_back_id"
+                android:text="@string/drinking"
+                android:textColor="@color/black"
+                android:id="@+id/title"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/drinking_view_id"
+        android:layout_below="@+id/drinking_TB_id"
+        android:background="@drawable/t_to_b_shadow"
+        />
+
+    <ListView
+        android:id="@+id/simple_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinking_view_id"
+        >
+    </ListView>
+
+
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drinking_view_id"
+        android:checkedButton="@id/noans_rb_id"
+        android:visibility="gone"
+        android:id="@+id/drinking_RG_id"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noans_rb_id"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="No answer"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="I drink socially"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="I don't drink"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="I'm against drinking"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="I drink a lot"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

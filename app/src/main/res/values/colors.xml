@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="purple">#673AB7</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="light_gray">#E6E5E5</color>
+    <color name="off_white">#F9F9F9</color>
+    <color name="facebook_color">#3b5998</color>
+    <color name="dark_gray">#E6E5E5</color>
+    <color name="gray_new">#36E6E1E1</color>
+
+
+    <color name="pink_color">#f89cef</color>
+
+
+    <color name="coloraccent">#673AB7</color>
+    <color name="red">#E96540</color>
+    <color name="lightblue">#03A9F4</color>
+    <color name="pink">#F875EB</color>#f89cef
+    <color name="orange">#FA825C</color>
+    <color name="green">#4CAF50</color>
+    <color name="zink">#009688</color>
+    <color name="light_purple">#9C27B0</color>
+    <color name="zink2">#009688</color>
+
+    <color name="transparent">#00ffffff</color>
+    <!--fragment transparent background color-->
+    <color name="normal_transparent">#66000000</color>
+
+    <color name="light_transparent">#33000000</color>
+
+    <color name="full_transparent">#00000000</color>
+
+    <color name="purple_color">#6c2fbb</color>
+    <color name="light_purple_color">#a532e5</color>
+
+
+    <color name="gray_lightest">#DEDEDE</color>
+    <color name="gray_light">#CCCCCC</color>
+
+    <color name="blue">#007AFF</color>
+    <color name="blue_alpha">#9CD9FF</color>
+
+
+</resources>

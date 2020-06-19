@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".All_Activities.Children_A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/children_TB_id"
+        android:layout_marginStart="-15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/children_back_id"
+                app:srcCompat="@drawable/ic_back_gray"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/children_back_id"
+                android:text="@string/children"
+                android:id="@+id/title"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/children_view_id"
+        android:layout_below="@+id/children_TB_id"
+        android:background="@drawable/t_to_b_shadow"
+        />
+
+
+    <ListView
+        android:id="@+id/simple_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/children_view_id"
+        >
+    </ListView>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/children_view_id"
+        android:checkedButton="@id/noans_rb_id"
+        android:id="@+id/children_RG_id"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noans_rb_id"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="No answer"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="Grown up"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="Already have"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="No, never"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:layout_gravity="right"
+            android:gravity="start"
+            android:text="Someday"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="15dp"
+            tools:ignore="RtlCompat"
+            android:background="@drawable/d_border_bottom"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

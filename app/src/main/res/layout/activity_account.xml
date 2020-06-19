@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context=".All_Activities.Account_A">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/account_TB_id"
+        android:layout_marginStart="-15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/account_back_id"
+                app:srcCompat="@drawable/ic_back_gray"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/account_back_id"
+                android:text="@string/account"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/account_view_id"
+        android:layout_below="@+id/account_TB_id"
+        android:background="@drawable/t_to_b_shadow"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/account_view_id"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_info_rl_id"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:id="@+id/profile_RL_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/userimage_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image_placeholder"
+                    app:roundAsCircle="true"
+                    fresco:failureImage="@drawable/image_placeholder"
+                    fresco:placeholderImage="@drawable/image_placeholder" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:id="@+id/add_photo_img_id"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/ic_camera_white"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_txt"
+                android:layout_below="@+id/profile_RL_id"
+
+                android:layout_centerHorizontal="true"
+                android:text="@string/username_age"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/see_profile"
+                android:layout_below="@+id/username_txt"
+                android:layout_centerHorizontal="true"
+                android:text="Tap to see your profile"
+                android:visibility="gone"
+                android:textColor="@color/purple"
+                android:textSize="14dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="1dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_RL_id"
+            android:background="@drawable/d_border_bottom"
+            android:paddingBottom="15dp"
+
+            android:layout_below="@+id/profile_info_rl_id"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/account_TV_id"
+                android:text="@string/hide_account"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_toLeftOf="@+id/account_CB_id"
+                android:layout_marginRight="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_TV_id"
+                android:text="@string/like_you_deleted_it_but_you_can_come_back_when_you_like"
+                android:layout_toLeftOf="@+id/account_CB_id"
+                android:layout_marginRight="25dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/account_CB_id"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_TV1_id"
+            android:layout_below="@+id/account_RL_id"
+            android:visibility="gone"
+            android:text="Make sure you can remember your password, as you'll need it to sign back in."
+            android:gravity="center"
+            android:textSize="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_TV2_id"
+            android:layout_below="@+id/account_TV1_id"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:text="+923041****04"
+            android:gravity="center"
+            android:background="@drawable/d_border_bottom"
+            android:paddingBottom="5dp"/>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/signout_RKL_id"
+            app:corner_radius="8dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/account_TV2_id"
+            android:background="@color/purple"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/account_signout_id"
+                android:background="@android:color/transparent"
+                android:text="@string/sign_out"
+                android:textColor="@color/white"
+                />
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:corner_radius="8dp"
+            android:visibility="gone"
+            android:layout_below="@+id/signout_RKL_id"
+            android:background="@drawable/d_round_blue_border_radius8"
+            android:layout_margin="20dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Forgot password?"
+                android:textColor="@color/black"
+                />
+
+        </com.jcminarro.roundkornerlayout.RoundKornerRelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/delete_account"
+            android:id="@+id/delete_account"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: es.guiguegon:gallerymodule:1.3.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f58f9b730aad47be6dda08457a8c7b7a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f58f9b730aad47be6dda08457a8c7b7a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/es.guiguegon/gallerymodule/1.3.1/c3436c01e11a654bd97a554f7c834ebb513528a7/gallerymodule-1.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

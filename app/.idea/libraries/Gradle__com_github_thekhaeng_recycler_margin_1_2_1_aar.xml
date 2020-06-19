@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.thekhaeng:recycler-margin:1.2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b170c60f58aa00848557ef039e2b2ea1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b170c60f58aa00848557ef039e2b2ea1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.thekhaeng/recycler-margin/1.2.1/6fe3c68d7e09bef02e4738dfae367093fee131b/recycler-margin-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/chat_item_IV_id"
+            android:layout_margin="5dp"
+            app:roundAsCircle="true"
+            app:roundingBorderWidth="1dp"
+            app:roundingBorderPadding="1dp"
+            app:roundingBorderColor="@color/coloraccent"
+            app:placeholderImageScaleType="centerCrop"
+            fresco:placeholderImage="@drawable/ic_avatar"
+            />
+
+</RelativeLayout>

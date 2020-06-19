@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.carlosmuvi:SegmentedProgressBar:0.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2839f3772f9bcf22c14f566dd9c57cd8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2839f3772f9bcf22c14f566dd9c57cd8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.carlosmuvi/SegmentedProgressBar/0.7.0/4f9f1214e961d2f09102826118fd3a8363514bbf/SegmentedProgressBar-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

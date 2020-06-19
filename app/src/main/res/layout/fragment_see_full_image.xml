@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/RL_cloase_layout"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true">
+
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_save"
+                android:layout_centerInParent="true"
+                android:padding="4dp"
+                android:id="@+id/savebtn"
+                android:layout_centerHorizontal="true"
+                android:tint="@color/white"
+                android:layout_toLeftOf="@+id/sharebtn"
+                android:background="@color/transparent"
+                />
+
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_share"
+                android:layout_centerInParent="true"
+                android:padding="19dp"
+                android:tint="@color/white"
+                android:id="@+id/sharebtn"
+                android:layout_toLeftOf="@+id/close_gallery"
+                android:background="@color/transparent"
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_cancel"
+                android:layout_marginRight="5dp"
+                android:padding="8dp"
+                android:tint="@color/white"
+                android:id="@+id/close_gallery"
+                android:scaleType="fitXY"
+                android:background="@color/transparent"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/single_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RL_cloase_layout"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/p_bar"
+        android:visibility="gone"/>
+
+</RelativeLayout>

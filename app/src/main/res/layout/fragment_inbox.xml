@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/Main_RL"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/my_match_RL">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/likes_count_layout"
+            android:visibility="gone"
+            android:layout_marginStart="5dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/likes_image"
+                android:layout_above="@+id/likes_count_txt"
+                app:roundAsCircle="true"
+                app:roundingBorderWidth="1dp"
+                app:roundingBorderPadding="1dp"
+                app:roundingBorderColor="@color/coloraccent"
+                app:placeholderImageScaleType="centerCrop"
+                fresco:placeholderImage="@drawable/ic_avatar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="0 Likes"
+                android:textSize="11dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:id="@+id/likes_count_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/match_recyclerview"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:clipToPadding="false"
+            android:layout_toEndOf="@+id/likes_count_layout"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Match Yet"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/no_my_match"
+            />
+
+    </RelativeLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/expandable_layout"
+        android:layout_below="@+id/my_match_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+        android:transcriptMode="alwaysScroll"
+        android:groupIndicator="@null"
+        android:dividerHeight="5.0dp"
+        >
+
+    </ExpandableListView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/inbox_recyclerview"
+        android:layout_below="@+id/expandable_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_loader"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Inbox yet."
+        android:textSize="20sp"
+        android:textColor="@color/purple"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/no_record"
+        android:layout_below="@+id/expandable_layout"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/toolbar_id"
+        android:layout_marginStart="-15dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_app_logo_hor"
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/control_IV_id"
+                app:srcCompat="@drawable/ic_controls"
+                android:layout_alignParentRight="true"
+                android:padding="4dp"
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/main_f_setting_id"
+                app:srcCompat="@drawable/ic_setting"
+                android:padding="4dp"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/main_f_edit_id"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_edit_prof"
+                android:padding="6dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_id"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/swipe_csv_id"
+                app:swipeDirection="horizontal"
+                app:elevationEnabled="false"
+                app:swipeEnabled="true"
+                android:background="@drawable/d_border_transparent"
+                android:layout_margin="10dp"
+
+                />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/item_details_f"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/pulse" />
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

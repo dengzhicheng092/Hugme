@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_id"
+    android:background="@color/full_transparent"
+    android:focusable="true"
+    android:layout_margin="20dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="5dp"
+        android:padding="20dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/nestedscrollview_id"
+                android:scrollbars="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="match_parent"
+                        android:layout_height="600dp"
+                        android:id="@+id/profile_iv_id"
+                        android:src="@drawable/image_placeholder"
+                        android:scaleType="centerCrop"
+
+
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="20dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="About me"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:id="@+id/simple_about"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/about_me_tv_id"
+                            android:text="About me"
+                            android:layout_below="@+id/simple_about"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            />
+                        
+                        
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:id="@+id/share_id"
+                            android:visibility="gone"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_upload"
+                            android:padding="8dp"
+                            />
+
+
+                        <ImageView
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:id="@+id/favorite_id"
+                            android:layout_toLeftOf="@+id/share_id"
+                            android:src="@drawable/ic_star_line"
+                            android:scaleType="fitCenter"
+                            android:visibility="gone"
+                            />
+
+
+                        <com.nex3z.flowlayout.FlowLayout
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/inflate_layout"
+                            android:layout_below="@+id/about_me_tv_id"
+                            app:flChildSpacing="10dp"
+                            app:flChildSpacingForLastRow="align"
+                            app:flRowSpacing="0dp">
+
+
+
+                        </com.nex3z.flowlayout.FlowLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:weightSum="2"
+                        android:visibility="gone"
+                        android:layout_marginTop="30dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/image_placeholder"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:foreground="@color/normal_transparent">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/image_placeholder"
+                                    android:scaleType="centerCrop"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="4 more photos"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"
+                                    />
+
+                            </RelativeLayout>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+<!--                    Recycle View -->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/RV_images_list"
+
+                        android:layout_below="@+id/tb_id"
+                        android:layout_above="@+id/send_layout"
+                        >
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+<!--                    ENd RecycleView-->
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorAccent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_centerInParent="true">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="Send a gift to start chatting"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:background="@drawable/d_border_white"
+                                    android:text="Send a gift"
+                                    android:textColor="@color/white"
+                                    android:textSize="14dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingBottom="8dp"
+                                    android:paddingStart="30dp"
+                                    android:paddingEnd="30dp"
+                                    android:layout_marginTop="15dp"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Current location"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sahiwal, Punjab (~90 km away)"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:id="@+id/distance"
+                            />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:background="@drawable/d_gray_border"
+                        android:text="Share this profile"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Block or Report"
+                        android:textColor="@color/purple"
+                        android:textSize="14dp"
+                        android:id="@+id/report_user"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@color/white"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:weightSum="4"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_swipe_left"
+                        android:id="@+id/move_left"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_delete"
+                        android:id="@+id/left_overlay"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/right_overlay"
+                        android:src="@drawable/ic_heart"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/move_right"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_swipe_right" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="42dp"-->
+                <!--android:id="@+id/chat_rl_id"-->
+                <!--android:background="@drawable/setting_top_border"-->
+                <!--android:layout_alignParentBottom="true">-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_toLeftOf="@+id/chat_send_id"-->
+                    <!--android:id="@+id/chat_et_id"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:hint="Write message here"-->
+                    <!--android:textColorHint="@color/gray"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--/>-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="42dp"-->
+                    <!--android:layout_height="42dp"-->
+                    <!--android:id="@+id/chat_send_id"-->
+                    <!--android:src="@drawable/ic_navigation"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--/>-->
+
+
+            <!--</RelativeLayout>-->
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

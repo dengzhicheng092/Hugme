@@ -1,0 +1,244 @@
+<resources>
+    <integer name="btnplusview">1</integer>
+
+    <string name="app_name">Hugme</string>
+
+    
+    <string name="facebook_app_id">fb_app_id</string>
+    <string name="fb_login_protocol_scheme">fb(fb_app_id)</string>
+
+  
+
+    <!--Admob Ad Ids-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!--Infeed Ads-->
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/8135179316</string>
+
+
+    <string name="google_developer_api_key">google_developer_api_key</string>
+    
+   
+
+   <string name="firebase_server_key">firebase_server_key_here</string>
+    
+   
+
+
+   <string name="gif_api_key">giphy_api_key</string>
+   
+   
+
+    <string name="agora_app_id">Place your agora app id</string>
+    
+    <!--<string name="agora_access_token">Place your agora access token</string>-->
+    <!--keep agora access token as empty. it is use for restrict the users to join the live streaming for now you can skip that string as empty-->
+    <string name="agora_access_token"></string>
+
+
+
+    <string name="loading">Loading ...</string>
+
+
+    <string name="device">android</string>
+    <string name="version">1.0</string>
+
+
+    <!-- Main Activity -->
+    <string name="start_broadcast_title">Start Live Broadcast</string>
+    <string name="topic_edit_hint">Pick a topic to chat</string>
+    <string name="need_necessary_permissions">Necessary permissions acquired</string>
+
+    <!-- Setting Activity -->
+    <string name="setting_title">Settings</string>
+    <string name="setting_resolution_title">Resolution</string>
+    <string name="setting_stats_title">Show video statistics</string>
+    <string name="setting_mirror_local_title">Local video preview mirror mode</string>
+    <string name="setting_mirror_remote_title">Remote video render mirror mode</string>
+    <string name="setting_mirror_encode_title">Local video encode mirror mode</string>
+
+    <!-- Live Activity -->
+
+    <!-- Role Choose Activity -->
+    <string name="legal_channel_name_characters" translatable="false">&#xA0;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&amp;()+,-:;&lt;=.>?@[]^_`{|}~</string>
+
+
+
+
+    <string name="account">Account</string>
+    <string name="username_age">Username, age</string>
+    <string name="hide_account">Hide account</string>
+    <string name="like_you_deleted_it_but_you_can_come_back_when_you_like">Like you deleted it, but you can come back when you like.</string>
+    <string name="sign_out">Sign out</string>
+    <string name="delete_account">Delete account</string>
+
+
+    <string name="basic_info">Basic info</string>
+    <string name="name_nhani">Name \nHAni</string>
+    <string name="birthday_n16_12_1996">Birthday \n16/12/1996</string>
+    <string name="gender">Gender</string>
+
+    <string name="blocked_users">Blocked Users</string>
+
+
+    <string name="user_name">User Name</string>
+    <string name="message">Message ...</string>
+    <string name="inbox">Inbox</string>
+    <string name="children">Children</string>
+
+
+
+
+    <string name="about_you">About you</string>
+    <string name="write_a_bit_about_yourself">Write a bit about yourself...</string>
+    <string name="living">Living</string>
+    <string name="smoking">Smoking</string>
+    <string name="drinking">Drinking</string>
+    <string name="relationship">Relationship</string>
+    <string name="sexuality">Sexuality</string>
+    <string name="appearance">Appearance</string>
+    <string name="social_accounts">Social accounts</string>
+    <string name="phone_number">Phone number</string>
+    <string name="connect">Connect</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+
+
+    <string name="how_do_you_describe_n_yourself">How do you describe \n yourself...</string>
+
+
+    <string name="enable_location">Enable location</string>
+    <string name="you_ll_need_to_enable_your_location_n_in_order_to_use_hugme">You\'ll need to enable your location\n in order to use Hugme</string>
+    <string name="allow_location">Allow Location</string>
+
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="next">Next</string>
+
+
+
+    <string name="_19_99">$19.99</string>
+    <string name="_29_99">$29.99</string>
+    <string name="_69_99">$69.99</string>
+    <string name="per_month">Per Month</string>
+    <string name="_3_months">3 months</string>
+    <string name="_1_year">1 year</string>
+    <string name="continue_txt">Continue</string>
+    <string name="recuring_billing_cancel_anytime">Recuring billing, cancel anytime.</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="subscription_txt">By tapping “Continue”, your payment will be charged to your Google Play
+        account, and your subscription will automatically renew for the same
+        package length at the same price until you cancel it in settings in the
+        Google Play store at least 24 hours prior to the end of the current period.
+        By tapping “Continue”, you agree to our Privacy Policy and Terms.</string>
+
+
+    <string name="live">Live</string>
+    <string name="leave_a_comment">Leave a comment...</string>
+
+
+    <string name="login_with">Login with...</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_phone_number">Continue with Phone number</string>
+    <string name="don_t_worry_we_never_post_on_facebook">Don\'t worry! We never post on Facebook.</string>
+    <string name="privacy">Privacy -</string>
+    <string name="terms_of_service">Terms of Service</string>
+
+
+    <string name="phonetext">Enter a phone number that can be used to verify your identity with a text message or phone call. </string>
+    <string name="your_phone_number">your phone number</string>
+    <string name="usa">USA</string>
+    <string name="_1">+1</string>
+    <string name="verify_phone">Verify Phone</string>
+    <string name="confirm">Confirm</string>
+    <string name="we_send_you_a_code_to_verify_your_phone_number">We send you a code to verify your phone number</string>
+    <string name="send_to">Send to ()</string>
+    <string name="i_did_t_receive_a_code">I did\'t receive a code!</string>
+    <string name="resend">Resend</string>
+
+
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+    <string name="current_location">Current Location</string>
+
+
+    <string name="settings">Settings</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="help_centre">Help Centre</string>
+    <string name="about">About</string>
+    <string name="app_version">App Version</string>
+
+
+    <string name="share_profile">Share Profile</string>
+
+
+    <string name="username">Username</string>
+    <string name="calling">Calling...</string>
+
+
+    <string name="about_me">About me</string>
+
+
+    <string name="testing">Testing</string>
+
+
+    <string name="introducting_hugme_boost">Introducting Hugme Boost</string>
+    <string name="skip_the_line">Skip the Line</string>
+    <string name="be_the_top_profile_in_your_area_for_30_minutes_and_get_more_watchs">Be the top profile in your area for 30 minutes and get more watchs</string>
+    <string name="boost_me">Boost Me</string>
+    <string name="_08_85_remaining">08:85 Remaining</string>
+    <string name="you_re_being_seen_by_more_people_keep_swiping_for_the_best_results">You\'re being seen by more people.Keep swiping for the best results!</string>
+    <string name="okey">OKEY</string>
+
+
+    <string name="describe_yourself_to_someone_who_doesn_t_know_you">Describe yourself to someone who doesn\'t know you</string>
+
+
+    <string name="no_other_user_is_live_at_that_time_n_click_of_go_live_for_live_video_streaming">No other user is live at that time.\n click of \'Go Live\' for live video streaming.</string>
+    <string name="go_live">Go Live</string>
+
+
+    <string name="tap_to_see_your_profile">Tap to see your Profile</string>
+    <string name="get_more_attention_ncomplete_your_profile">Get more attention - \nComplete your profile</string>
+    <string name="hugme_premium">Hugme Premium</string>
+    <string name="activate">Activate</string>
+    <string name="popularity">Popularity</string>
+    <string name="very_low">Very low</string>
+
+
+    <string name="upload_photo">Upload photo</string>
+
+    <string name="hey_user_when_s_your_birthday">Hey, user! When\'s your birthday?</string>
+    <string name="day">Day</string>
+    <string name="d">D</string>
+    <string name="month">Month</string>
+    <string name="m">M</string>
+    <string name="year">Year</string>
+    <string name="y">Y</string>
+    <string name="you_must_be_at_least_18_to_use_hugme">You must be at least 18 to use Hugme</string>
+
+    <string name="what_s_your_email">What\'s your email?</string>
+    <string name="sign_up_with_phone_number_instead">Sign up with phone number instead</string>
+    <string name="sign_up_with_email_instead">Sign up with email instead</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="mobile_number">Mobile Number</string>
+
+    <string name="hey_you_re">Hey! You\'re...</string>
+
+    <string name="next_up_what_s_your_name">Next up, what\'s your name?</string>
+    <string name="this_is_how_you_ll_appear_on_hugme">This is how you\'ll appear on Hugme</string>
+
+    <string name="likes">Likes</string>
+    <string name="browse">Browse</string>
+    <string name="size_610x350px">Size 610x350px</string>
+    <string name="see_who_likes_you">See Who Likes you?</string>
+
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".All_Fragments.Live_Users_F">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   
+      
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recylerview"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/coloraccent"
+          android:gravity="center"
+          android:id="@+id/no_data_found"
+          android:layout_centerInParent="true"
+          android:text="@string/no_other_user_is_live_at_that_time_n_click_of_go_live_for_live_video_streaming"></TextView>
+
+      <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="45dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="15dp"
+          android:id="@+id/go_live_layout"
+          app:corner_radius="22dp"
+          android:background="@color/coloraccent">
+
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/go_live"
+             android:textSize="18dp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_marginLeft="25dp"
+             android:layout_marginRight="25dp"
+             />
+      </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+   </RelativeLayout>
+</FrameLayout>

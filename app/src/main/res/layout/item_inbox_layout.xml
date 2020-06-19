@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upperlayout"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_profile_gray"
+            fresco:placeholderImage="@drawable/ic_profile_gray"
+            fresco:roundAsCircle="true"
+            android:id="@+id/userimage"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userimage"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="16dp"
+                    android:id="@+id/username"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/username"
+                    android:src="@drawable/d_circle_green"
+
+                    android:layout_marginLeft="5dp"
+
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/datetxt"
+                    android:textSize="12sp"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:text="1 January"
+                    android:textColor="@color/black"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    />
+
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/datetxt"
+                    android:id="@+id/ic_star"
+                    android:src="@drawable/ic_star_unfilled"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/message"
+                android:text="Your Message"
+                android:textSize="13dp"
+                android:maxLines="1"
+                android:layout_marginTop="-20dp"
+                android:textStyle="italic"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

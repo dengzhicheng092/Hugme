@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".All_Activities.Setting_A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/setting_TB_id"
+        android:layout_marginStart="-15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/setting_back_id"
+                app:srcCompat="@drawable/ic_back_gray"
+                android:padding="12dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/setting_back_id"
+                android:text="@string/settings"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:id="@+id/setting_view_id"
+        android:layout_below="@+id/setting_TB_id"
+        android:background="@drawable/t_to_b_shadow"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/setting_view_id">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_basic_id"
+            android:text="@string/basic_info"
+            android:padding="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_account_id"
+            android:layout_below="@+id/setting_basic_id"
+            android:text="@string/account"
+            android:paddingLeft="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_account_pref_id"
+            android:layout_below="@+id/setting_account_id"
+            android:text="@string/privacy_policy"
+            android:padding="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_help_id"
+            android:layout_below="@+id/setting_account_pref_id"
+            android:text="@string/help_centre"
+            android:padding="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_about_id"
+            android:layout_below="@+id/setting_help_id"
+            android:text="@string/about"
+            android:padding="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/setting_blocked_id"
+            android:layout_below="@+id/setting_about_id"
+            android:text="@string/blocked_users"
+            android:padding="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Chat_Inbox"
+            android:layout_below="@+id/setting_blocked_id"
+            android:text="@string/inbox"
+            android:padding="15dp"
+            android:background="@drawable/setting_bottom_border"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            />
+
+
+        <TextView
+            android:id="@+id/t_app_verson_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/app_version"
+            android:textColor="@color/gray"
+            android:layout_below="@+id/Chat_Inbox"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerInParent="true"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
